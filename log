@@ -15,3 +15,20 @@ sudoku.c:54:10: error: unused variable ‘nodoRemp’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ddcd66d
+Fri 29 Sep 2023 07:34:44 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:64:22: error: expected ‘;’ before ‘for’
+   64 |           condicion=1
+      |                      ^
+      |                      ;
+   65 |           for(int k=1; k<=9; k++)
+      |           ~~~         
+sudoku.c:54:10: error: unused variable ‘nodoRemp’ [-Werror=unused-variable]
+   54 |     Node nodoRemp;
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5c0fd3e
