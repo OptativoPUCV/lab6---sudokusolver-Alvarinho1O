@@ -77,7 +77,7 @@ int is_valid(Node* n){
                 int num = n->sudo[i][j];
                 if(num != 0){
                     if(matriz[num] == 1){ 
-                        return 0
+                        return 0;
                     }
                     matriz[num] = 1;
                 }
