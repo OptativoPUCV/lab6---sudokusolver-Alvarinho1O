@@ -52,3 +52,22 @@ sudoku.c:54:10: error: variable ‘nodoRemp’ set but not used [-Werror=unused-
 cc1: all warnings being treated as errors
 Compilation failed
 cbae300
+Fri 29 Sep 2023 07:35:45 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:63:24: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   63 |             nodoRemp = copy(n);
+      |                        ^~~~
+sudoku.c:64:21: error: invalid type argument of ‘->’ (have ‘Node’)
+   64 |             nodoRemp->sudo[i][j] = k
+      |                     ^~
+sudoku.c:64:37: error: expected ‘;’ before ‘if’
+   64 |             nodoRemp->sudo[i][j] = k
+      |                                     ^
+      |                                     ;
+   65 |             if(is_valid(nodoRemp)){
+      |             ~~                       
+Compilation failed
+d311914

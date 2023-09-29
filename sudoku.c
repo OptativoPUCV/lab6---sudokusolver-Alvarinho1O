@@ -60,7 +60,7 @@ List* get_adj_nodes(Node* n){
         if(n->sudo[i][j]==0){ 
           condicion=1;
           for(int k=1; k<=9; k++){
-            nodoRemp = copy(n)
+            nodoRemp = copy(n);
             nodoRemp->sudo[i][j] = k
             if(is_valid(nodoRemp)){
               pushBack(list, nodoRemp)
