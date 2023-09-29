@@ -142,3 +142,44 @@ Fri 29 Sep 2023 07:37:25 PM UTC:
  tests:  2|4
 total_score: 15/70
 7eb5cea
+Fri 29 Sep 2023 07:57:21 PM UTC: 
+ sudoku.c | 40 ++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 40 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:55:31: error: expected ‘;’ before ‘}’ token
+   55 |                 filas[num] = 1
+      |                               ^
+      |                               ;
+   56 |             }
+      |             ~                  
+sudoku.c:62:9: error: expected ‘,’ or ‘;’ before ‘for’
+   62 |         for(int i=0; i<9; i++){
+      |         ^~~
+sudoku.c:62:22: error: ‘i’ undeclared (first use in this function)
+   62 |         for(int i=0; i<9; i++){
+      |                      ^
+sudoku.c:62:22: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:62:30: error: expected ‘;’ before ‘)’ token
+   62 |         for(int i=0; i<9; i++){
+      |                              ^
+      |                              ;
+sudoku.c:62:30: error: expected statement before ‘)’ token
+sudoku.c:68:29: error: expected ‘;’ before ‘}’ token
+   68 |                 col[num] = 1
+      |                             ^
+      |                             ;
+   69 |             }
+      |             ~                
+sudoku.c:78:17: error: expected ‘,’ or ‘;’ before ‘if’
+   78 |                 if(num != 0){
+      |                 ^~
+sudoku.c:77:21: error: unused variable ‘num’ [-Werror=unused-variable]
+   77 |                 int num = n->sudo[i][j]
+      |                     ^~~
+sudoku.c:74:13: error: unused variable ‘matriz’ [-Werror=unused-variable]
+   74 |         int matriz[10] = {0};
+      |             ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+aadb909
