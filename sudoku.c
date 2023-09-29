@@ -72,8 +72,8 @@ int is_valid(Node* n){
     
     for(int k=0; k<9; k++){ 
         int matriz[10] = {0}; 
-        for(int i=k/3; i<k/3+3; i++){
-            for(int j=k%3; j<k%3+3; j++){
+        for(int i=k/3*3; i<k/3*3+3; i++){
+            for(int j=k%3*3; j<k%3*3+3; j++){
                 int num = n->sudo[i][j];
                 if(num != 0){
                     if(matriz[num] == 1){ 
