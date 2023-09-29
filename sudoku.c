@@ -52,7 +52,7 @@ int is_valid(Node* n){
                 if(filas[num] == 1){
                     return 0; 
                 }
-                filas[num] = 1 
+                filas[num] = 1; 
             }
         }
     }
