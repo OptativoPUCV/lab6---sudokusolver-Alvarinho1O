@@ -90,3 +90,43 @@ sudoku.c:64:37: error: expected ‘;’ before ‘if’
       |             ~~                       
 Compilation failed
 af21afd
+Fri 29 Sep 2023 07:36:28 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:63:24: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   63 |             nodoRemp = copy(n);
+      |                        ^~~~
+sudoku.c:64:21: error: invalid type argument of ‘->’ (have ‘Node’)
+   64 |             nodoRemp->sudo[i][j] = k;
+      |                     ^~
+sudoku.c:65:25: error: incompatible type for argument 1 of ‘is_valid’
+   65 |             if(is_valid(nodoRemp)){
+      |                         ^~~~~~~~
+      |                         |
+      |                         Node
+sudoku.c:46:20: note: expected ‘Node *’ but argument is of type ‘Node’
+   46 | int is_valid(Node* n){
+      |              ~~~~~~^
+sudoku.c:66:30: error: incompatible type for argument 2 of ‘pushBack’
+   66 |               pushBack(list, nodoRemp);
+      |                              ^~~~~~~~
+      |                              |
+      |                              Node
+In file included from test.c:4:
+list.h:23:33: note: expected ‘void *’ but argument is of type ‘Node’
+   23 | void pushBack(List* list, void* data);
+      |                           ~~~~~~^~~~
+In file included from test.c:5:
+sudoku.c:68:20: error: incompatible type for argument 1 of ‘free’
+   68 |               free(nodoRemp);
+      |                    ^~~~~~~~
+      |                    |
+      |                    Node
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:565:25: note: expected ‘void *’ but argument is of type ‘Node’
+  565 | extern void free (void *__ptr) __THROW;
+      |                   ~~~~~~^~~~~
+Compilation failed
+5c7e52c
