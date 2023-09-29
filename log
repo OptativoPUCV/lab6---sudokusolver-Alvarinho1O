@@ -258,3 +258,16 @@ sudoku.c:74:13: error: unused variable ‘matriz’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5ef589c
+Fri 29 Sep 2023 07:58:28 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:80:33: error: expected ‘;’ before ‘}’ token
+   80 |                         return 0
+      |                                 ^
+      |                                 ;
+   81 |                     }
+      |                     ~            
+Compilation failed
+1052faa
