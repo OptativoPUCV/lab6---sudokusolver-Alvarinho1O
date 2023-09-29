@@ -32,3 +32,23 @@ sudoku.c:54:10: error: unused variable ‘nodoRemp’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5c0fd3e
+Fri 29 Sep 2023 07:35:26 PM UTC: 
+ sudoku.c | 17 ++++++-----------
+ 1 file changed, 6 insertions(+), 11 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:63:24: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   63 |             nodoRemp = copy(n)
+      |                        ^~~~
+sudoku.c:63:31: error: expected ‘;’ before ‘nodoRemp’
+   63 |             nodoRemp = copy(n)
+      |                               ^
+      |                               ;
+   64 |             nodoRemp->sudo[i][j] = k
+      |             ~~~~~~~~           
+sudoku.c:54:10: error: variable ‘nodoRemp’ set but not used [-Werror=unused-but-set-variable]
+   54 |     Node nodoRemp;
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cbae300
