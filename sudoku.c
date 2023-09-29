@@ -51,7 +51,7 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
-    Node nodoRemp;
+    Node* nodoRemp;
     int condicion;
     for(int i=0; i<9; i++){ 
       if(condicion!=1) break;
