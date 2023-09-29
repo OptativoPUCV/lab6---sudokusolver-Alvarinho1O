@@ -51,6 +51,31 @@ int is_valid(Node* n){
 
 List* get_adj_nodes(Node* n){
     List* list=createList();
+    Node nodoRemp;
+    int condicion;
+    for(int i=0; i<9; i++)
+    { 
+      if(condicion!=1) break;
+      for(int j=0; j<9; j++)
+      {  
+        if(condicion==1) break
+        if(n->sudo[i][j]==0)
+        { 
+          condicion=1
+          for(int k=1; k<=9; k++)
+          {
+            nodoRemp = copy(n)
+            nodoRemp->sudo[i][j] = k
+            if(is_valid(nodoRemp))
+            {
+              pushBack(list, nodoRemp)
+            }else{
+              free(nodoRemp)
+            }
+          }
+        }
+      }
+    }
     return list;
 }
 

@@ -1,0 +1,17 @@
+Fri 29 Sep 2023 07:34:22 PM UTC: 
+ sudoku.c | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:61:31: error: expected ‘;’ before ‘if’
+   61 |         if(condicion==1) break
+      |                               ^
+      |                               ;
+   62 |         if(n->sudo[i][j]==0)
+      |         ~~                     
+sudoku.c:54:10: error: unused variable ‘nodoRemp’ [-Werror=unused-variable]
+   54 |     Node nodoRemp;
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ddcd66d
