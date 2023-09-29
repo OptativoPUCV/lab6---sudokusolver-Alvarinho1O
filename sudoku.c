@@ -63,9 +63,9 @@ List* get_adj_nodes(Node* n){
             nodoRemp = copy(n);
             nodoRemp->sudo[i][j] = k
             if(is_valid(nodoRemp)){
-              pushBack(list, nodoRemp)
+              pushBack(list, nodoRemp);
             }else{
-              free(nodoRemp)
+              free(nodoRemp);
             }
           }
         }

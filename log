@@ -71,3 +71,22 @@ sudoku.c:64:37: error: expected ‘;’ before ‘if’
       |             ~~                       
 Compilation failed
 d311914
+Fri 29 Sep 2023 07:36:11 PM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:63:24: error: incompatible types when assigning to type ‘Node’ from type ‘Node *’
+   63 |             nodoRemp = copy(n);
+      |                        ^~~~
+sudoku.c:64:21: error: invalid type argument of ‘->’ (have ‘Node’)
+   64 |             nodoRemp->sudo[i][j] = k
+      |                     ^~
+sudoku.c:64:37: error: expected ‘;’ before ‘if’
+   64 |             nodoRemp->sudo[i][j] = k
+      |                                     ^
+      |                                     ;
+   65 |             if(is_valid(nodoRemp)){
+      |             ~~                       
+Compilation failed
+af21afd
